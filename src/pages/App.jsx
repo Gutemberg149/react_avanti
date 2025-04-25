@@ -1,4 +1,4 @@
-import "../styles/App.css";
+import "../styles/app.css";
 import MainSection from "../components/Section.jsx";
 import { WrapperMain } from "../styles/app-style.js";
 
