@@ -3,17 +3,17 @@ import { CiSearch } from "react-icons/ci";
 import { fetchGitHubProfile } from "../services/api.js";
 import { FormSearch, ButtonSubimt } from "../styles/form-style.js";
 
-// Compoenete com props
+// Componente com props
 export const FormComponent = ({ onSearchResults }) => {
-  // State para o valor q sera procurado
+  // State para o valor que serar procurado
   const [searchQuery, setSearchQuery] = useState("");
 
   const handleSearch = async (e) => {
     e.preventDefault();
 
-    // Olhar s eo input estar vazio.
+    // Olhar se o input estar vazio.
     if (!searchQuery.trim()) {
-      // Botificar s ecaso o imput extiver vazio.
+      // Motificar se caso o imput extiver vazio.
       onSearchResults({
         error: "Por favor, digite um usuário",
         profile: null,
@@ -45,7 +45,7 @@ export const FormComponent = ({ onSearchResults }) => {
     } catch (error) {
       console.log(error);
 
-      //Notificar o error.
+      //Motificar o error.
       onSearchResults({
         profile: null,
         error: "Nenhum perfil foi encontrado com esse nome de usuário. Tente novamente.",

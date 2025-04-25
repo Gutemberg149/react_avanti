@@ -8,7 +8,7 @@ export default function NavComponent() {
   const [profile, setProfile] = useState(null); //Para guardado dados do github.
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
-  const [tentativaSearch, setTentativaSearch] = useState(false); // escutando se caso haja tentativa de procurar com o input vazio.
+  const [tentativaSearch, setTentativaSearch] = useState(false); // Escutando se caso haja tentativa de procurar com o input vazio.
 
   const handleSearchResults = (results) => {
     setProfile(results.profile);
@@ -19,7 +19,7 @@ export default function NavComponent() {
 
   return (
     <SectionComponent>
-      {/* Top section com componente de procura*/}
+      {/* Top section com componente de procura */}
       <div className="topsectionContainer">
         <div className="innerContainer01">
           <FaGithub className="icon" />

@@ -32,6 +32,7 @@ export const SectionComponent = styled.section`
       }
     }
   }
+
   .bottomsectionContainer {
     display: flex;
     align-items: start;
@@ -65,7 +66,7 @@ const spin = keyframes`
   100% { transform: rotate(360deg); }
 `;
 
-//estilização da animacao do loading...
+//estilização da animação do loading...
 export const ColorfulSpinner = styled.div`
   position: relative;
   width: 120px;
@@ -84,7 +85,7 @@ export const ColorfulSpinner = styled.div`
   }
 `;
 
-//Estilização do componete que vai a palavra loading.
+//Estilização do componente que vai a palavra loading.
 export const LoadingText = styled.p`
   position: absolute;
   top: 50%;

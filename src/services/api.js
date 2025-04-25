@@ -11,7 +11,7 @@ export async function fetchGitHubProfile(userName) {
       },
     });
 
-    // Handle error que não sao respostas 200
+    // Handle error que não são respostas 200
     if (!response.ok) {
       throw new Error(`GitHub API error: ${response.status} ${response.statusText}`);
     }
