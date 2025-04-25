@@ -1,5 +1,5 @@
 import { ColorfulSpinner, LoadingText, SectionComponent } from "../styles/section-style.js";
-import { FormComponent } from "./form.jsx"; // Componente de procurar (input)
+import { FormComponent } from "./Form.jsx"; // Componente de procurar (input)
 import ProfileCard from "./ProfileCard.jsx"; // Componente display do perfil
 import { FaGithub } from "react-icons/fa";
 import { useState } from "react";
